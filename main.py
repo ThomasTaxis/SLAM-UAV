@@ -27,7 +27,9 @@ from MatToVec import crossMatToVec
 import matplotlib.pyplot as plt
 from quaternionMultiplication import quat_mult
 
-image_data = r'C:\Users\ttaxi\Thesis\2011_09_29_drive_0071_sync\2011_09_29\2011_09_29_drive_0071_sync'
+DATA_ROOT = 'data/dataset/2011_09_29_drive_0071_sync/2011_09_29/2011_09_29_drive_0071_sync'
+
+image_data = DATA_ROOT
 
 
 image_files = [f for f in os.listdir(image_data) if f.endswith(('.png', '.jpg', '.jpeg'))]
@@ -210,7 +212,7 @@ for (first_image_filename, second_image_filename), matched_info in filtered_inli
 image_files = [f for f in os.listdir(image_data) if f.endswith(('.png', '.jpg', '.jpeg'))]
 
 
-oxts = load_oxts_lite_data(r'C:\Users\ttaxi\Thesis\2011_09_29_drive_0071_sync\2011_09_29\2011_09_29_drive_0071_sync')
+oxts = load_oxts_lite_data(DATA_ROOT)
 
 Rt_IMUtoG = convertOxtsToPose(oxts)
 
@@ -234,8 +236,8 @@ for i in range(len(oxts)):
 
     
 
-image_timestamps = load_timestamps(r'C:\Users\ttaxi\Thesis\2011_09_29_drive_0071_sync\2011_09_29\2011_09_29_drive_0071_sync',True)
-IMU_timestamps = load_timestamps(r'C:\Users\ttaxi\Thesis\2011_09_29_drive_0071_sync\2011_09_29\2011_09_29_drive_0071_sync\oxts',True)
+image_timestamps = load_timestamps(DATA_ROOT, True)
+IMU_timestamps = load_timestamps(os.path.join(DATA_ROOT, 'oxts'), True)
 
 
 base_path_calib = os.path.dirname(__file__)
