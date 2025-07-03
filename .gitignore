@@ -1,0 +1,39 @@
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Editor files
+.vscode/
+*.swp
+
+# Plot images and figures
+*.png
+*.jpg
+*.jpeg
+plots/
+
+# Data folders (optional, if you don't want to push raw data)
+data/
+*.txt
+*.csv
+
+# Jupyter/IPython
+.ipynb_checkpoints/
+
+# Logs or debug files
+*.log
+*.out
+*.tmp
+
+# Windows specific (since your path shows C:\Users\ttaxi)
+desktop.ini
+
+# Compiled extensions
+*.so
+*.dll
+*.pyd
