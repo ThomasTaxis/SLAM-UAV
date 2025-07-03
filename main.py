@@ -238,11 +238,13 @@ image_timestamps = load_timestamps(r'C:\Users\ttaxi\Thesis\2011_09_29_drive_0071
 IMU_timestamps = load_timestamps(r'C:\Users\ttaxi\Thesis\2011_09_29_drive_0071_sync\2011_09_29\2011_09_29_drive_0071_sync\oxts',True)
 
 
+base_path_calib = os.path.dirname(__file__)
 
+# Relative paths to the calibration files
+calib_folder = os.path.join(base_path_calib, 'calibration')
 
-T_VeloToCam,K = load_calibration(r'C:\Users\ttaxi\Thesis\2011_09_29_calib\2011_09_29')
-
-T_IMUtoVelo = load_calibration_rigid(r'C:\Users\ttaxi\Thesis\2011_09_29_calib\2011_09_29\calib_imu_to_velo.txt')
+T_VeloToCam, K = load_calibration(calib_folder)
+T_IMUtoVelo = load_calibration_rigid(os.path.join(calib_folder, 'calib_imu_to_velo.txt'))
 
 T_IMUtoCam = T_VeloToCam@T_IMUtoVelo
 
