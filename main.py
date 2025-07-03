@@ -29,10 +29,6 @@ from quaternionMultiplication import quat_mult
 
 image_data = r'C:\Users\ttaxi\Thesis\2011_09_29_drive_0071_sync\2011_09_29\2011_09_29_drive_0071_sync'
 
-image_timestamps = r'C:\Users\ttaxi\Thesis\Data_City\2011_09_26\2011_09_26_drive_0001_extract\image_00\timestamps'
-
-oxts_data = glob.glob(r'C:\Users\ttaxi\Thesis\2011_09_29_drive_0071_sync\2011_09_29\2011_09_29_drive_0071_sync\oxts\data\*.txt')
-
 
 image_files = [f for f in os.listdir(image_data) if f.endswith(('.png', '.jpg', '.jpeg'))]
 
