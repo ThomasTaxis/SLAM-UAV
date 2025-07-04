@@ -27,7 +27,7 @@ from MatToVec import crossMatToVec
 import matplotlib.pyplot as plt
 from quaternionMultiplication import quat_mult
 
-DATA_ROOT = 'data/dataset/2011_09_29_drive_0071_sync/2011_09_29/2011_09_29_drive_0071_sync'
+DATA_ROOT = 'data/dataset/2011_09_29/2011_09_29_drive_0071_sync'
 
 image_data = DATA_ROOT
 
