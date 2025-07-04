@@ -1,5 +1,5 @@
+requests
+gdown
 opencv-python
 numpy
 matplotlib
-os
-scipy
