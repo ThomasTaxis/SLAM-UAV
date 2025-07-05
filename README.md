@@ -1,6 +1,6 @@
 # MSCKF-SLAM for UAVs
 
-This project implements a lightweight **MSCKF-SLAM** (Multi-State Constraint Kalman Filter) system designed for Unmanned Aerial Vehicles (UAVs), with a focus on minimal dependencies, and customizability.
+This project implements a **MSCKF-SLAM** (Multi-State Constraint Kalman Filter) system designed for Unmanned Aerial Vehicles (UAVs), with a focus on minimal dependencies, and customizability.
 
 ---
 
