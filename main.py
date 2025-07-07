@@ -86,12 +86,7 @@ for i in range(1, len(descriptors)):
     
     matches = bf.match(des1, des2)
 
-    # Filter matches using the Lowe's ratio test
-    #ratio_thresh = 0.5
-    #good_matches = []
-    #for m, n in matches:
-     #   if m.distance < ratio_thresh * n.distance:
-      #      good_matches.append(m)
+   
             
             
     matches = sorted(matches, key=lambda x: x.distance)
